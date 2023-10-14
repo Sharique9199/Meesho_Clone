@@ -1,0 +1,143 @@
+.payment-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    box-shadow: 0 0 8px 0px rgb(229, 191, 223);
+    margin:4vw 0vw 0vw 9vw;
+    width: 80vw;
+    height: 64vh;
+    background-color: rgba(217, 155, 236, 0.074);
+}
+.payment{
+    width: 52vw;
+    height: 66vh;
+    display: grid;
+   
+}
+.payment h1{
+    align-items: center;
+    margin-left: 16vw;
+    font-size: 30px;
+}
+label{
+    font-size: 20px;
+}
+.pay-detail{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    text-align: start;
+    margin-top: 4px;
+}
+
+.pay-detail input{
+    height: 30px;
+    margin-right: 2px;
+
+}
+
+.payment-option{
+    position: relative;
+}
+#paymentValue{
+    padding: 8px 221px;
+    margin-left: 5rem;
+}
+.payment-option select{
+    position: relative;
+    left: 14px;
+}
+
+.card-detail{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    position: relative;
+    bottom: 14px;
+    text-align: start;
+    margin-top: 8px;
+   
+}
+
+.card-detail input{
+    height: 30px;
+    margin-right: 2px;
+}
+
+.goback button{
+   margin:10px 0px 30px;
+    padding: 14px 72px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: rgb(159, 32, 137);
+}
+/*  */
+
+@media (max-width: 767px){
+    .payment-container{
+        margin:7vw 0vw 0vw 0vw;
+        width: 92vw;
+        height: 82vh;
+        font-size: 5rem;
+    }
+    .payment{
+        width: 89vw;
+        height: 100vh;
+    }
+    .payment h1{
+        margin-left: 3rem;
+    }
+    .payment label{
+        font-size: 16px;
+        margin-top: 10px;
+    }  
+    .pay-detail input{
+        width: 56vw;
+        height: 4vh;
+        margin: 6px 0px 0px 0px;
+    } 
+    .payment-option{
+        display: none;
+    }
+.payment-option select{
+    display: none;
+}
+.card-detail input{
+    margin:8px 11px 0px 0px;
+}
+}
+
+/* Tablet Styles (768px to 1023px) */
+@media (min-width: 768px) and (max-width: 1023px){
+    .payment-container{
+        margin:7vw 0vw 0vw 0vw;
+        width: 96vw;
+        height: 72vh;
+        font-size: 5rem;
+    }
+    .payment{
+        width: 90vw;
+        height: 100vh;
+    }
+    .payment h1{
+        margin-left: 18rem;
+    }
+    .payment label{
+        font-size: 16px;
+        margin-top: 10px;
+    }  
+    .pay-detail input{
+        width: 58vw;
+        height: 4vh;
+        margin: 6px 0px 0px 0px;
+    } 
+    .payment-option{
+        display: none;
+    }
+/* .payment-option select{
+    display: none;
+} */
+.card-detail input{
+    margin:8px 11px 0px 0px;
+}
+}
